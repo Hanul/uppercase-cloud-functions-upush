@@ -1,5 +1,5 @@
 require('uppercase-cloud-functions');
 
-UPUSH('UIAP');
+BOX('UPUSH');
 require('./ANDROID_PUSH.js');
 require('./IOS_PUSH.js');

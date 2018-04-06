@@ -1,6 +1,6 @@
 {
 	"name": "uppercase-cloud-functions-upush",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"dependencies": {
 		"apn": "1.7.5",
 		"node-gcm": "0.9.15",

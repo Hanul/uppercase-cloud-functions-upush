@@ -7,16 +7,16 @@ UPUSH.ANDROID_PUSH = METHOD(() => {
 
 	let sender;
 
-	if (NODE_CONFIG.UPUSH !== undefined && NODE_CONFIG.UPUSH.Android !== undefined) {
-		sender = new gcm.Sender(NODE_CONFIG.UPUSH.Android.serverKey);
-	}
-
 	return {
 
 		run : (params) => {
 			//REQUIRED: params
 			//REQUIRED: params.regId
 			//OPTIONAL: params.data
+			
+			if (sender === undefined && NODE_CONFIG.UPUSH !== undefined && NODE_CONFIG.UPUSH.Android !== undefined) {
+				sender = new gcm.Sender(NODE_CONFIG.UPUSH.Android.serverKey);
+			}
 
 			let regId = params.regId;
 
