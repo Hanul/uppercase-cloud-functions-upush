@@ -1,10 +1,10 @@
 {
 	"name": "uppercase-cloud-functions-upush",
-	"version": "0.9.3",
+	"version": "0.9.8",
 	"dependencies": {
 		"apn": "1.7.5",
 		"node-gcm": "0.9.15",
-		"uppercase-cloud-functions": "^0.9.3"
+		"uppercase-cloud-functions": "^0.9.8"
 	},
 	"main": "index.js"
 }
